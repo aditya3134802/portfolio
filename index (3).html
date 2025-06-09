@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Kumar Singh | Cloud & DevOps Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .scroll-smooth {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+  <!-- Header -->
+  <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        Aditya Kumar Singh
+      </h1>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">About</a>
+        <a href="#skills" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Skills</a>
+        <a href="#experience" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Experience</a>
+        <a href="#projects" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Projects</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Contact</a>
+      </nav>
+      <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-btn">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <div class="px-4 py-2 space-y-2 bg-white border-t">
+        <a href="#about" class="block text-gray-700 hover:text-blue-600">About</a>
+        <a href="#skills" class="block text-gray-700 hover:text-blue-600">Skills</a>
+        <a href="#experience" class="block text-gray-700 hover:text-blue-600">Experience</a>
+        <a href="#projects" class="block text-gray-700 hover:text-blue-600">Projects</a>
+        <a href="#contact" class="block text-gray-700 hover:text-blue-600">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="gradient-bg text-white text-center py-32 mt-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="mb-8">
+        <img src="src/images/profile.png" alt="Aditya Kumar Singh - Cloud & DevOps Engineer" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white shadow-lg object-cover">
+      </div>
+      <h2 class="text-5xl md:text-6xl font-bold mb-6">
+        Cloud & DevOps Engineer
+      </h2>
+      <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8 leading-relaxed">
+        Building scalable, secure, and automated infrastructure on Azure and AWS using Terraform, Ansible, and CI/CD pipelines.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contact" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300">
+          <i class="fas fa-envelope mr-2"></i>Get In Touch
+        </a>
+        <a href="#projects" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
+          <i class="fas fa-code mr-2"></i>View Projects
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h3 class="text-4xl font-bold text-gray-800 mb-4">About Me</h3>
+        <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-lg text-gray-600 leading-relaxed mb-6">
+            Cloud DevOps Engineer with over 3 years of experience in building secure, scalable, and automated infrastructure on Azure and AWS.
+            I specialize in bridging cloud architecture with DevOps automation—delivering robust CI/CD pipelines, codifying infrastructure with
+            Terraform and Ansible, and improving release cycles through reliable automation.
+          </p>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-blue-600">3+</div>
+              <div class="text-gray-600">Years Experience</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-blue-600">50+</div>
+              <div class="text-gray-600">Servers Managed</div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h4 class="text-xl font-semibold mb-4 text-gray-800">Core Expertise</h4>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <i class="fas fa-cloud text-blue-600 mr-3"></i>
+              <span>Multi-Cloud Infrastructure Management</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-code-branch text-blue-600 mr-3"></i>
+              <span>CI/CD Pipeline Development</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-server text-blue-600 mr-3"></i>
+              <span>Infrastructure as Code</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-chart-line text-blue-600 mr-3"></i>
+              <span>Monitoring & Performance Optimization</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h3 class="text-4xl font-bold text-gray-800 mb-4">Technical Skills</h3>
+        <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+          <div class="text-center mb-4">
+            <i class="fas fa-cloud text-4xl text-blue-600 mb-2"></i>
+            <h4 class="text-xl font-semibold">Cloud Platforms</h4>
+          </div>
+          <ul class="space-y-2 text-gray-600">
+            <li><i class="fas fa-check text-green-500 mr-2"></i>AWS, Azure, GCP</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Multi-cloud strategies</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Cloud migration</li>
+          </ul>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+          <div class="text-center mb-4">
+            <i class="fas fa-tools text-4xl text-blue-600 mb-2"></i>
+            <h4 class="text-xl font-semibold">DevOps Tools</h4>
+          </div>
+          <ul class="space-y-2 text-gray-600">
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Terraform, Ansible</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Jenkins, GitHub Actions</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Docker, Kubernetes</li>
+          </ul>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+          <div class="text-center mb-4">
+            <i class="fas fa-code text-4xl text-blue-600 mb-2"></i>
+            <h4 class="text-xl font-semibold">Programming</h4>
+          </div>
+          <ul class="space-y-2 text-gray-600">
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Python, Bash, PowerShell</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>YAML, Groovy</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Infrastructure scripting</li>
+          </ul>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+          <div class="text-center mb-4">
+            <i class="fas fa-chart-bar text-4xl text-blue-600 mb-2"></i>
+            <h4 class="text-xl font-semibold">Monitoring</h4>
+          </div>
+          <ul class="space-y-2 text-gray-600">
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Prometheus, Grafana</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>ELK Stack, CloudWatch</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Performance monitoring</li>
+          </ul>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+          <div class="text-center mb-4">
+            <i class="fas fa-database text-4xl text-blue-600 mb-2"></i>
+            <h4 class="text-xl font-semibold">Databases</h4>
+          </div>
+          <ul class="space-y-2 text-gray-600">
+            <li><i class="fas fa-check text-green-500 mr-2"></i>MySQL, PostgreSQL</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Cassandra, MongoDB</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Database optimization</li>
+          </ul>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+          <div class="text-center mb-4">
+            <i class="fas fa-shield-alt text-4xl text-blue-600 mb-2"></i>
+            <h4 class="text-xl font-semibold">Security</h4>
+          </div>
+          <ul class="space-y-2 text-gray-600">
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Security compliance</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Network security</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i>Identity management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h3 class="text-4xl font-bold text-gray-800 mb-4">Professional Experience</h3>
+        <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+      </div>
+      
+      <div class="relative">
+        <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-600 to-purple-600"></div>
+        
+        <div class="space-y-12">
+          <!-- Experience 1 -->
+          <div class="relative flex flex-col md:flex-row items-start md:items-center">
+            <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
+            <div class="ml-12 md:ml-0 md:w-1/2 md:pr-8 mb-4 md:mb-0">
+              <div class="bg-gray-50 p-6 rounded-lg shadow-lg card-hover">
+                <h4 class="text-xl font-bold text-gray-800 mb-2">Cloud Engineer</h4>
+                <p class="text-blue-600 font-semibold mb-2">Digital KRANTI Pvt. Ltd.</p>
+                <p class="text-gray-600 text-sm mb-4">Feb 2023 – May 2025</p>
+                <ul class="space-y-2 text-gray-600">
+                  <li class="flex items-start">
+                    <i class="fas fa-cog text-blue-600 mr-2 mt-1"></i>
+                    <span>Engineered and maintained CI/CD pipelines with Jenkins and AWS CodeDeploy</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-code text-blue-600 mr-2 mt-1"></i>
+                    <span>Developed Terraform modules and ARM templates for provisioning</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-server text-blue-600 mr-2 mt-1"></i>
+                    <span>Managed OpenShift deployments and private cloud infrastructure</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-database text-blue-600 mr-2 mt-1"></i>
+                    <span>Automated Cassandra setup and optimized performance</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Experience 2 -->
+          <div class="relative flex flex-col md:flex-row-reverse items-start md:items-center">
+            <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-purple-600 rounded-full border-4 border-white shadow-lg"></div>
+            <div class="ml-12 md:ml-0 md:w-1/2 md:pl-8 mb-4 md:mb-0">
+              <div class="bg-gray-50 p-6 rounded-lg shadow-lg card-hover">
+                <h4 class="text-xl font-bold text-gray-800 mb-2">Cloud Support Engineer</h4>
+                <p class="text-blue-600 font-semibold mb-2">Digital KRANTI Pvt. Ltd.</p>
+                <p class="text-gray-600 text-sm mb-4">Oct 2020 – Jan 2023</p>
+                <ul class="space-y-2 text-gray-600">
+                  <li class="flex items-start">
+                    <i class="fas fa-network-wired text-purple-600 mr-2 mt-1"></i>
+                    <span>Configured Azure VNet, subnets, DNS, and routing for secure architectures</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-balance-scale text-purple-600 mr-2 mt-1"></i>
+                    <span>Deployed VMs and configured load balancers for HA/DR</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-robot text-purple-600 mr-2 mt-1"></i>
+                    <span>Automated infrastructure provisioning using Ansible and Terraform</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-headset text-purple-600 mr-2 mt-1"></i>
+                    <span>Provided Tier-2 AWS support and scripted incident remediation</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Experience 3 -->
+          <div class="relative flex flex-col md:flex-row items-start md:items-center">
+            <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-indigo-600 rounded-full border-4 border-white shadow-lg"></div>
+            <div class="ml-12 md:ml-0 md:w-1/2 md:pr-8 mb-4 md:mb-0">
+              <div class="bg-gray-50 p-6 rounded-lg shadow-lg card-hover">
+                <h4 class="text-xl font-bold text-gray-800 mb-2">System Administrator</h4>
+                <p class="text-blue-600 font-semibold mb-2">Webnotech Pvt. Ltd.</p>
+                <p class="text-gray-600 text-sm mb-4">Aug 2017 – Jul 2020</p>
+                <ul class="space-y-2 text-gray-600">
+                  <li class="flex items-start">
+                    <i class="fas fa-server text-indigo-600 mr-2 mt-1"></i>
+                    <span>Managed over 50 servers (Linux, Windows, Solaris)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-sync text-indigo-600 mr-2 mt-1"></i>
+                    <span>Automated deployments, patching, and system monitoring</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fab fa-docker text-indigo-600 mr-2 mt-1"></i>
+                    <span>Implemented Docker and Kubernetes with Helm</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-shield-alt text-indigo-600 mr-2 mt-1"></i>
+                    <span>Maintained security compliance and MySQL clustering</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h3 class="text-4xl font-bold text-gray-800 mb-4">Featured Projects</h3>
+        <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+          <div class="bg-gradient-to-r from-blue-600 to-purple-600 h-48 flex items-center justify-center">
+            <i class="fas fa-cloud text-6xl text-white"></i>
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">Multi-Cloud Infrastructure</h4>
+            <p class="text-gray-600 mb-4">Designed and implemented scalable infrastructure across AWS, Azure, and GCP using Terraform and Ansible.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Terraform</span>
+              <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">AWS</span>
+              <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm">Azure</span>
+            </div>
+            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">
+              <i class="fas fa-external-link-alt mr-1"></i>View Details
+            </a>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+          <div class="bg-gradient-to-r from-green-600 to-blue-600 h-48 flex items-center justify-center">
+            <i class="fas fa-code-branch text-6xl text-white"></i>
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">CI/CD Pipeline Automation</h4>
+            <p class="text-gray-600 mb-4">Built automated CI/CD pipelines using Jenkins and GitHub Actions for seamless deployment workflows.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Jenkins</span>
+              <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm">GitHub Actions</span>
+              <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm">Docker</span>
+            </div>
+            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">
+              <i class="fas fa-external-link-alt mr-1"></i>View Details
+            </a>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+          <div class="bg-gradient-to-r from-purple-600 to-pink-600 h-48 flex items-center justify-center">
+            <i class="fas fa-chart-line text-6xl text-white"></i>
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">Monitoring & Observability</h4>
+            <p class="text-gray-600 mb-4">Implemented comprehensive monitoring solutions using Prometheus, Grafana, and ELK stack.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-sm">Prometheus</span>
+              <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">Grafana</span>
+              <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm">ELK Stack</span>
+            </div>
+            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">
+              <i class="fas fa-external-link-alt mr-1"></i>View Details
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h3 class="text-4xl font-bold text-gray-800 mb-4">Get In Touch</h3>
+        <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Ready to discuss your next cloud or DevOps project? Let's connect and build something amazing together.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Contact Info -->
+        <div class="space-y-8">
+          <div class="flex items-start space-x-4">
+            <div class="bg-blue-100 p-3 rounded-lg">
+              <i class="fas fa-envelope text-blue-600 text-xl"></i>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800 mb-2">Email</h4>
+              <a href="mailto:aksingh3134@gmail.com" class="text-blue-600 hover:text-blue-800 text-lg">
+                aksingh3134@gmail.com
+              </a>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="bg-green-100 p-3 rounded-lg">
+              <i class="fas fa-phone text-green-600 text-xl"></i>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800 mb-2">Phone</h4>
+              <a href="tel:+917458995596" class="text-green-600 hover:text-green-800 text-lg">
+                +91-7458995596
+              </a>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="bg-purple-100 p-3 rounded-lg">
+              <i class="fas fa-map-marker-alt text-purple-600 text-xl"></i>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800 mb-2">Location</h4>
+              <p class="text-gray-600 text-lg">Noida, India</p>
+            </div>
+          </div>
+          
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h4 class="text-xl font-semibold text-gray-800 mb-4">Let's Connect</h4>
+            <div class="flex space-x-4">
+              <a href="https://linkedin.com/in/aditya-kumar-singh" class="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors">
+                <i class="fab fa-linkedin text-xl"></i>
+              </a>
+              <a href="https://github.com/aditya3134802" class="bg-gray-800 text-white p-3 rounded-lg hover:bg-gray-900 transition-colors">
+                <i class="fab fa-github text-xl"></i>
+              </a>
+              <a href="mailto:aksingh3134@gmail.com" class="bg-red-600 text-white p-3 rounded-lg hover:bg-red-700 transition-colors">
+                <i class="fas fa-envelope text-xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h4 class="text-2xl font-bold text-gray-800 mb-6">Send Message</h4>
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+              <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Your Name">
+            </div>
+            
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+              <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="your.email@example.com">
+            </div>
+            
+            <div>
+              <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+              <input type="text" id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Project Discussion">
+            </div>
+            
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+              <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Tell me about your project..."></textarea>
+            </div>
+            
+            <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300">
+              <i class="fas fa-paper-plane mr-2"></i>Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            Aditya Kumar Singh
+          </h3>
+          <p class="text-gray-300 mb-4">
+            Cloud & DevOps Engineer passionate about building scalable, secure infrastructure and automating deployment processes.
+          </p>
+          <div class="flex space-x-4">
+            <a href="https://linkedin.com/in/aditya-kumar-singh" class="text-gray-300 hover:text-white transition-colors">
+              <i class="fab fa-linkedin text-xl"></i>
+            </a>
+            <a href="https://github.com/aditya3134802" class="text-gray-300 hover:text-white transition-colors">
+              <i class="fab fa-github text-xl"></i>
+            </a>
+            <a href="mailto:aksingh3134@gmail.com" class="text-gray-300 hover:text-white transition-colors">
+              <i class="fas fa-envelope text-xl"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+            <li><a href="#skills" class="text-gray-300 hover:text-white transition-colors">Skills</a></li>
+            <li><a href="#experience" class="text-gray-300 hover:text-white transition-colors">Experience</a></li>
+            <li><a href="#projects" class="text-gray-300 hover:text-white transition-colors">Projects</a></li>
+            <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Services</h4>
+          <ul class="space-y-2 text-gray-300">
+            <li>Cloud Infrastructure Design</li>
+            <li>DevOps Implementation</li>
+            <li>CI/CD Pipeline Development</li>
+            <li>Infrastructure as Code</li>
+            <li>Monitoring & Observability</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+        <p class="text-gray-300">
+          &copy; 2025 Aditya Kumar Singh. All rights reserved. Built with passion for cloud technology.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          // Close mobile menu if open
+          document.getElementById('mobile-menu').classList.add('hidden');
+        }
+      });
+    });
+
+    // Add scroll effect to header
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 100) {
+        header.classList.add('backdrop-blur-sm', 'bg-white/90');
+      } else {
+        header.classList.remove('backdrop-blur-sm', 'bg-white/90');
+      }
+    });
+
+    // Form submission
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(this);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const subject = formData.get('subject');
+      const message = formData.get('message');
+      
+      // Create mailto link
+      const mailtoLink = `mailto:aksingh3134@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+      
+      // Open default email client
+      window.location.href = mailtoLink;
+      
+      // Show success message
+      alert('Thank you for your message! Your default email client should now open with the message pre-filled.');
+      
+      // Reset form
+      this.reset();
+    });
+
+    // Add animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections
+    document.querySelectorAll('section').forEach(section => {
+      section.style.opacity = '0';
+      section.style.transform = 'translateY(20px)';
+      section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(section);
+    });
+  </script>
+</body>
+
+</html>
